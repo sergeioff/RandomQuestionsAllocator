@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class RandomQuestionsAllocator {
     public static void main(String[] args) {
         if (args.length < 3) {
-            System.out.println("Usage: RandomizeQuestions totalNumberOfQuestions studentName1 studentName2 ...");
+            System.out.println("Usage: RandomQuestionsAllocator totalNumberOfQuestions studentName1 studentName2 ...");
             return;
         }
         Questions questions = new Questions(Integer.parseInt(args[0]));
