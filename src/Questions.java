@@ -16,9 +16,7 @@ class Questions {
 
 
     public int getQuestion() {
-        int questionNum = questions.get(0);
-        questions.remove(0);
-        return questionNum;
+        return questions.remove(0);
     }
 
     @Override
