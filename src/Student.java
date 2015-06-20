@@ -1,15 +1,16 @@
-import java.util.HashSet;
+import java.util.Collections;
+import java.util.TreeSet;
 
 /**
  * Created by sergeioff on 12/18/14.
  */
 class Student {
     String name;
-    HashSet<Integer> questions;
+    TreeSet<Integer> questions;
 
     Student(String name) {
         this.name = name;
-        questions = new HashSet<Integer>();
+        questions = new TreeSet<Integer>();
     }
 
     public void addQuestion(int questionNum) {
