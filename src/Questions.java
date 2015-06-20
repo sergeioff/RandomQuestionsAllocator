@@ -5,7 +5,7 @@ import java.util.Collections;
  * Created by sergeioff on 12/18/14.
  */
 class Questions {
-    ArrayList<Integer> questions;
+    private ArrayList<Integer> questions;
 
     Questions(int count) {
         questions = new ArrayList<Integer>();
@@ -19,8 +19,7 @@ class Questions {
         return questions.remove(0);
     }
 
-    @Override
-    public String toString() {
-        return "remain: " + questions.size() + " " + questions.toString();
+    public int getCount() {
+        return questions.size();
     }
 }

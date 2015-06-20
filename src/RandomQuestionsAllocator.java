@@ -24,10 +24,12 @@ public class RandomQuestionsAllocator {
             }
         }
 
+        for (int i = 0 ; questions.getCount() != 0; i++) {
+            students.get(i).addQuestion(questions.getQuestion());
+        }
+
         for (Student student : students) {
             System.out.println(student);
         }
-
-        System.out.println(questions);
     }
 }
