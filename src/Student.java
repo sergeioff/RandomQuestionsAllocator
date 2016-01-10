@@ -1,20 +1,27 @@
-import java.util.Collections;
 import java.util.TreeSet;
 
 /**
- * Created by sergeioff on 12/18/14.
+ * This class represents the student and his questions
+ * @author SergeiOFF
  */
 class Student {
-    String name;
-    TreeSet<Integer> questions;
+    private final String name;
+    private final TreeSet<Integer> questions;
 
+    /**
+     * @param name Students name
+     */
     Student(String name) {
         this.name = name;
-        questions = new TreeSet<Integer>();
+        questions = new TreeSet<>();
     }
 
-    public void addQuestion(int questionNum) {
-        questions.add(questionNum);
+    /**
+     * Adds the question to student questions
+     * @param question Question number
+     */
+    public void addQuestion(int question) {
+        questions.add(question);
     }
 
     @Override
